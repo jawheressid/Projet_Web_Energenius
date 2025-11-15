@@ -1,0 +1,210 @@
+:root {
+  --bg-body: #f2f6ff;
+  --bg-light: #e5efff;
+  --bg-white: #fff;
+  --primary: #0f62fe;
+  --text-main: #0b1f33;
+  --muted-text: #5f6c85;
+  --border: #d5e1fb;
+  --round-large: 28px;
+  --round-medium: 20px;
+}
+.register-page *,
+.register-page *::before,
+.register-page *::after {
+  box-sizing: border-box;
+}
+.register-page {
+  margin: 0;
+  font-family:
+    Inter,
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    sans-serif;
+  background: var(--bg-body);
+  color: var(--text-main);
+}
+.register-page a {
+  color: inherit;
+  text-decoration: none;
+}
+.register-page .container {
+  width: min(720px, 92%);
+  margin: 0 auto;
+}
+.register-page .site-header {
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(6px);
+  border-bottom: 1px solid rgba(213, 225, 251, 0.6);
+}
+.register-page .header-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+  padding: 1rem 0;
+}
+.register-page .brand {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  margin: 0 auto;
+}
+.register-page .logo {
+  width: 48px;
+  height: 48px;
+  border-radius: 16px;
+  background: #fff;
+  border: 1px solid rgba(15, 98, 254, 0.2);
+  display: grid;
+  place-items: center;
+  padding: 6px;
+  overflow: hidden;
+}
+.register-page .logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.register-page .brand-name {
+  font-weight: 700;
+}
+.register-page .section {
+  padding: 3.5rem 0;
+}
+.register-page .section-light {
+  background: var(--bg-light);
+}
+.register-page .signup-head {
+  text-align: center;
+  margin-bottom: 1.2rem;
+}
+.register-page .signup-head h1 {
+  margin: 0.2rem 0 0;
+  font-size: 2.1rem;
+}
+.register-page .signup-head p {
+  color: var(--muted-text);
+}
+.register-page .steps {
+  display: flex;
+  justify-content: center;
+  gap: 0.8rem;
+  margin: 1rem 0;
+}
+.register-page .step {
+  width: 120px;
+  height: 4px;
+  border-radius: 999px;
+  background: rgba(15, 98, 254, 0.25);
+}
+.register-page .step.active {
+  background: var(--primary);
+}
+.register-page .card {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: var(--round-large);
+  box-shadow: 0 25px 50px rgba(15, 52, 136, 0.08);
+  padding: 1.4rem;
+}
+.register-page label {
+  display: block;
+  margin: 0.7rem 0;
+}
+.register-page label span {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.35rem;
+}
+.register-page input[type="text"],
+.register-page input[type="email"],
+.register-page input[type="password"] {
+  width: 100%;
+  padding: 0.9rem 1rem;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: #f7faff;
+  outline: 0;
+  transition: border-color 0.2s;
+}
+.register-page input:focus {
+  border-color: var(--primary);
+}
+.register-page .password-field {
+  display: flex;
+  align-items: stretch;
+}
+.register-page .password-field input {
+  flex: 1;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.register-page .password-field .reveal {
+  width: 44px;
+  border: 1px solid var(--border);
+  border-left: 0;
+  background: #fff;
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+  cursor: pointer;
+}
+.register-page .terms {
+  display: flex;
+  gap: 0.6rem;
+  align-items: flex-start;
+  margin-top: 0.4rem;
+}
+.register-page .btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.9rem 1.4rem;
+  border-radius: 999px;
+  border: 1px solid transparent;
+  font-weight: 600;
+  cursor: pointer;
+}
+.register-page .btn-primary {
+  background: var(--primary);
+  color: #fff;
+  box-shadow: 0 12px 30px rgba(15, 98, 254, 0.3);
+}
+.register-page .btn-outline {
+  background: transparent;
+  border-color: var(--border);
+}
+.register-page .actions {
+  display: flex;
+  gap: 0.8rem;
+  margin-top: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.register-page .actions .btn {
+  min-width: 200px;
+}
+.register-page .auth-alt {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  align-items: center;
+  margin: 1.2rem 0;
+}
+.register-page .hidden {
+  display: none;
+}
+.register-page .form-error {
+  margin-top: 1rem;
+  padding: 0.9rem 1rem;
+  border-radius: 12px;
+  background: rgba(194, 63, 63, 0.08);
+  color: #a83232;
+  border: 1px solid rgba(194, 63, 63, 0.4);
+}
+.register-page .foot-note {
+  text-align: center;
+  color: var(--muted-text);
+  margin-top: 1.2rem;
+}
