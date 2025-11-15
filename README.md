@@ -39,7 +39,7 @@ Flux global : l’utilisateur navigue sur `energenius-next-app`, s’authentifie
 ## Lancement du projet
 ### 1. Backend Node/Express
 1. `cd backend`
-2. `cp .env.example .env` (si le fichier n’existe pas, créez‑en un avec les clés ci‑dessous) :
+2. Creer le fichier `.env` :
    ```env
    PORT=4000
    MONGO_URL=mongodb://localhost:27017/energenius
