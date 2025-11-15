@@ -1,0 +1,10 @@
+# Node / Next outputs
+node_modules
+.next
+dist
+
+# Virtual environments / env files
+.venv
+venv
+.env
+.env.local
